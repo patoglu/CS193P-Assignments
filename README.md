@@ -1,4 +1,4 @@
-#  Assignments and solutions for [Stanford SwiftUI Course 2021](https://cs193p.sites.stanford.edu)
+#  Assignments and solutions for [Stanford - Developing Applications for iOS Course 2021](https://cs193p.sites.stanford.edu)
 
 ## Assignment 1: Memorize
 ### Objective

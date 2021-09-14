@@ -15,11 +15,6 @@ enum EmojiSelection
 
 
 struct ContentView: View {
-    @State public var animals = ["🐟","🐬","🐳","🐋","🦈","🦭","🐊","🐅","🐆","🦓","🦍","🦧","🦣","🐘","🦛","🦏","🐪","🐫","🦒","🦘","🦬"]
-    @State var cars =
-    ["🚗","🚕","🚙","🏎️","🚓","🛻","🚚","🚛","🚔","🚡","🚃","🚋","🚞"]
-    @State var instruments =
-        ["🎻","🎸","🪗","🎺","🎷","🪘","🎹","🎨"]
     @State var current_emojis = ["🐟","🐬","🐳","🐋","🦈","🦭","🐊","🐅","🐆","🦓","🦍","🦧","🦣","🐘","🦛","🦏","🐪","🐫","🦒","🦘","🦬"]
     var body: some View {
         
@@ -31,7 +26,9 @@ struct ContentView: View {
             {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))])
                 {
-                    ForEach(current_emojis[0..<current_emojis.capacity], id: \.self, content: {emoji in CardView(content:  emoji)}).aspectRatio(2/3, contentMode: .fit)                     
+                    ForEach(current_emojis[0..<current_emojis.capacity], id: \.self, content: {emoji in CardView(content:  emoji)}).aspectRatio(2/3, contentMode: .fit)
+                        
+                                        
                 }
                 .foregroundColor(.red)
             }
@@ -44,9 +41,14 @@ struct ContentView: View {
                 instrument_theme
             }
             .font(.largeTitle)
-            .padding(.horizontal)   
+            .padding(.horizontal)
+          
+            
+            
         }
         .padding(.horizontal)
+       
+        
     }
     var animal_theme: some View
     {
@@ -72,7 +74,8 @@ struct ContentView: View {
     {
         Button
         {
-            current_emojis = ["🎻","🎸","🪗","🎺","🎷","🪘","🎹","🎨"].shuffled()
+            
+            current_emojis =       ["🎻","🎸","🪗","🎺","🎷","🪘","🎹","🎨"].shuffled()
         }
         label: {
             Image(systemName: "guitars.fill")
@@ -108,6 +111,11 @@ struct CardView: View
     }
 
 }
+
+
+
+
+
 
 
 

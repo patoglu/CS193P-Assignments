@@ -1,4 +1,4 @@
-#  Assignments and solutions for [Stanford SwiftUI Course 2021](https://cs193p.sites.stanford.edu)
+#  Assignments and solutions for [Stanford - Developing Applications for iOS Course 2021](https://cs193p.sites.stanford.edu)
 
 ## Assignment 1: Memorize
 ### Objective
@@ -17,7 +17,7 @@ The goal of this assignment is to recreate the demonstration given in the first 
 9. The text description of the theme-choosing buttons must use a noticeably smaller font than the font we chose for the emoji on the cards.
 10. Your UI should work in portrait or landscape on any iPhone. This probably will not require any work on your part (that’s part of the power of SwiftUI), but be sure to experiment with running on different simulators in Xcode to be sure.
 
-### Working app:
+### Working app :grinning:
 <p align="center">
   <img src="https://media.giphy.com/media/QG7NF1GJ3tHzcB9FOl/giphy.gif?cid=790b76112a3c8f3f2d257c69ce01386bfdee628995967c95&rid=giphy.gif&ct=g" alt="animated"/>
   <img src="https://media.giphy.com/media/hiRcJctmVniT8wsLJq/giphy.gif?cid=790b7611fb6faf194d8d07c06757f2b64f2017f2242202c8&rid=giphy.gif&ct=g" alt="animated" />
